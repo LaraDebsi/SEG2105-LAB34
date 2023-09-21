@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 
 =======
 Fay
 >>>>>>> 47b46dd6313b9c51e33e799782b8909b0d965279
+=======
+Fay
+Lara
+Kiara
+Chelsea
+the real chelsea
+>>>>>>> 0445a44a31b67041887d8de102f3e917c3a41b65
