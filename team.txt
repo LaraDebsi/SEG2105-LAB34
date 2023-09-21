@@ -8,5 +8,3 @@ Fay
 Lara
 Kiara
 Chelsea
-the real chelsea
->>>>>>> 0445a44a31b67041887d8de102f3e917c3a41b65
