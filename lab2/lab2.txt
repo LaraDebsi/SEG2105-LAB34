@@ -1,6 +1,17 @@
 E25
-a)
-b)
-c)
+a) There's certain functionality that's only available for a certain type 
+(ex. rotatePoint() returns a cartesian point, so you would have to convert 
+it back to polar afterwards).
+
+b) So because the two types are so different, converting from one to the other would result 
+in some data lost (3D to 2D and vice versa, cartesian coordinates don't take angles into 
+consideration, some details won't be able to transfer over). This would probably be minimal 
+for one conversion, but converting back and forth eventually would result in inaccurate data 
+(either too general or very specific at the wrong point).
+
+c) Done in PointCPTest.main()
 
 E27
+AbstractPointCP.java
+PolarPointCP.java
+CartesianPointCP.java created
