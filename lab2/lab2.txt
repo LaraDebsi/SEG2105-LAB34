@@ -12,6 +12,6 @@ for one conversion, but converting back and forth eventually would result in ina
 c) Done in PointCPTest.main()
 
 E27
-AbstractPointCP.java
-PolarPointCP.java
-CartesianPointCP.java created
+PointCP5.java (abstract parent)
+PointCP2.java
+PointCP3.java (children) created
