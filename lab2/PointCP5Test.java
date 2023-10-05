@@ -12,7 +12,7 @@ import java.io.*;
  * @author Dr Timothy C. Lethbridge
  * @author Paul Holden
  */
-public class PointCPTest
+public class PointCP5Test
 {
   //Class methods *****************************************************
 
@@ -32,46 +32,32 @@ public class PointCPTest
    */
   public static void main(String[] args)
   {
-    PointCP point;
+    PointCP5 point;
 
     System.out.println("Cartesian-Polar Coordinates Conversion Program");
 
     // Check if the user input coordinates from the command line
     // If he did, create the PointCP object from these arguments.
     // If he did not, prompt the user for them.
-    try
-    {
-      point = new PointCP(args[0].toUpperCase().charAt(0), 
-        Double.valueOf(args[1]).doubleValue(), 
-        Double.valueOf(args[2]).doubleValue());
-    }
-    catch(Exception e)
-    {
-      // If we arrive here, it is because either there were no
-      // command line arguments, or they were invalid
-      if(args.length != 0)
-        System.out.println("Invalid arguments on command line");
-
-      try
-      {
-        point = getInput();
-      }
-      catch(IOException ex)
-      {
-        System.out.println("Error getting input. Ending program.");
-        return;
-      }
-    }
-    int x = 0;
-    while(x<100){
-      System.out.println("\nYou entered:\n" + point);
-      point.convertStorageToCartesian();
-      System.out.println("\nAfter asking to store as Cartesian:\n" + point);
-      point.convertStorageToPolar();
-      System.out.println("\nAfter asking to store as Polar:\n" + point);
-      x++;
-    }
     
+    
+      int type = Integer.valueOf(args[0]);
+
+      if(type==1){
+        point = new PointCP2( Double.valueOf(args[1]).doubleValue(), 
+        Double.valueOf(args[2]).doubleValue());
+      } else{
+        point = new PointCP3( Double.valueOf(args[1]).doubleValue(), 
+        Double.valueOf(args[2]).doubleValue());
+      }
+      
+    
+    
+    System.out.println("\nYou entered:\n" + point);
+    point.convertStorageToCartesian();
+    System.out.println("\nAfter asking to store as Cartesian:\n" + point);
+    point.convertStorageToPolar();
+    System.out.println("\nAfter asking to store as Polar:\n" + point);
   }
 
   /**
